@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Trusted Processors</title>
-</head>
-<body>
-	<h1>Trusted Processors</h1>
-	<p>We are a newly formed business. Our website will be setup over the coming months.</p>
-</body>
-</html>
+---
+title: Trusted Processors
+permalink: /
+layout: default
+---
+
+{% capture header_content   %}{% include home-sections/header.md   %}{% endcapture %}
+{% capture user_content     %}{% include home-sections/user.md     %}{% endcapture %}
+{% capture engineer_content %}{% include home-sections/engineer.md %}{% endcapture %}
+{% capture manager_content  %}{% include home-sections/manager.md  %}{% endcapture %}
+{% capture investor_content %}{% include home-sections/investor.md %}{% endcapture %}
+{% capture reporter_content %}{% include home-sections/reporter.md %}{% endcapture %}
+{% capture other_content    %}{% include home-sections/other.md    %}{% endcapture %}
+
+<header>
+    <div class="container">
+        {{ header_content | markdownify }}
+    </div>
+</header>
