@@ -1,6 +1,6 @@
-# Trusted Processors
+# BeyondRISC
 
-### Building an ecosystem to support rapid, trustworthy innovation of<br>Internet of Things devices.
+### The go-to ecosystem for rapid, trustworthy innovation of<br>Internet of Things devices.
 
 ---
 
