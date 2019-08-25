@@ -1,5 +1,5 @@
 ---
-title: Blog - Trusted Processors
+title: Blog - BeyondRISC
 permalink: /blog
 ---
 # Latest Posts
