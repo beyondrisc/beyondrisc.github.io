@@ -1,0 +1,14 @@
+.main-logo {
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: block;
+        flex-basis: content;
+        margin: 2rem 0;
+    }
+
+    img {
+        max-height: 8rem;
+    }
+}

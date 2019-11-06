@@ -4,16 +4,7 @@ permalink: /
 layout: default
 ---
 
-{% capture header_content   %}{% include home-sections/header.md   %}{% endcapture %}
-{% capture user_content     %}{% include home-sections/user.md     %}{% endcapture %}
-{% capture engineer_content %}{% include home-sections/engineer.md %}{% endcapture %}
-{% capture manager_content  %}{% include home-sections/manager.md  %}{% endcapture %}
-{% capture investor_content %}{% include home-sections/investor.md %}{% endcapture %}
-{% capture reporter_content %}{% include home-sections/reporter.md %}{% endcapture %}
-{% capture other_content    %}{% include home-sections/other.md    %}{% endcapture %}
-
-<header>
-    <div class="container">
-        {{ header_content | markdownify }}
-    </div>
-</header>
+<div class="home-hero">
+    <h1>Fast, trustworthy IoT</h1>
+    <p>Use modern languages without feature restrictions or performance penalties.</p>
+</div>

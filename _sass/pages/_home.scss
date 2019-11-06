@@ -1,0 +1,21 @@
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    h1 {
+        font-family: 'Josefin Sans';
+        font-weight: bold;
+        font-size: 3.5rem;
+        width: 50%;
+    }
+
+    p {
+        font-family: 'Public Sans';
+        font-weight: normal;
+        font-size: 2rem;
+        width: 50%;
+    }
+}

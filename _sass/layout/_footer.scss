@@ -1,0 +1,22 @@
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-info__logo {
+    display: block;
+
+    img {
+        height: 100px;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav > *:first-child {
+    margin-left: 12%;
+}

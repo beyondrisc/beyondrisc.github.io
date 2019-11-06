@@ -1,3 +1,18 @@
 ---
 ---
-@import "main";
+
+@import 'vendor/bootstrap-reboot';
+
+@import 'base/typography';
+
+@import 'theme/theme';
+
+@import 'layout/grid';
+@import 'layout/footer';
+
+@import 'components/logo';
+@import 'components/footer-nav';
+@import 'components/footer-info';
+@import 'components/main-menu';
+
+@import 'pages/home';
