@@ -63,9 +63,9 @@ body {
     @include respond-to('large') {
         grid-row: 3;
         display: grid;
-        grid-template-columns: 9fr 1fr 2fr;
+        grid-template-columns: 9fr 3fr;
         grid-gap: 20px;
-        grid-template-areas: "nav . info";
+        grid-template-areas: "nav info";
     }
 }
 
