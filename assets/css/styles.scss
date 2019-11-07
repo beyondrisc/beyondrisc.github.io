@@ -9,10 +9,13 @@
 
 @import 'layout/grid';
 @import 'layout/footer';
+@import 'layout/blog-posts';
 
 @import 'components/logo';
 @import 'components/footer-nav';
 @import 'components/footer-info';
 @import 'components/main-menu';
+@import 'components/content-block';
+@import 'components/blog-post-summary';
 
 @import 'pages/home';

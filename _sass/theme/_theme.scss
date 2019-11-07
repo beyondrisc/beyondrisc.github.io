@@ -2,7 +2,11 @@ $beyondrisc-light-red: hsl(1, 86%, 69%);
 $beyondrisc-light-blue: hsl(191, 100%, 90%);
 
 body {
-    background-image: url('/assets/background.png');
+    background-image: url('/assets/background-page.png');
     background-size: cover;
     background-repeat: no-repeat;
+
+    &.theme-home {
+        background-image: url('/assets/background-home.png');
+    }
 }

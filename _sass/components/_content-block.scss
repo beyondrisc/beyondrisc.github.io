@@ -1,0 +1,15 @@
+.content-block {
+    background: hsla(0, 0%, 100%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    width: 40rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    & > * {
+        margin: 0.5rem 2rem;
+    }
+}
