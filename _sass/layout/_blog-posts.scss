@@ -1,20 +1,16 @@
 @import '../abstracts/functions';
 
 .blog-posts {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    //width: 100rem;
+    max-width: 95vw;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
-.blog-posts > .blog-post-summary:first-of-type {
-    grid-column: 1 / span 2;
-}
-
-.blog-posts > .blog-post-summary {
-    grid-column: 1 / span 2;
-
-    @include respond-to('large') {
-        grid-column: span 1;
-    }
+.blog-posts-featured {
+    max-width: 95vw;
+    margin: 0 auto;
 }

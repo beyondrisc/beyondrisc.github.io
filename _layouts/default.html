@@ -21,31 +21,7 @@
             <section class="page-content">
                 {{ content }}
             </section>
-            <footer class="page-footer">
-                <nav class="footer-nav">
-                    <section class="footer-nav__submenu">
-                        <h2>About</h2>
-                        <ul>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </section>
-                    <section class="footer-nav__submenu">
-                        <h2>Blog</h2>
-                        <ul>
-                            <li><a href="#">What is BeyondRISC?</a></li>
-                            <li><a href="#">Hello, world!</a></li>
-                        </ul>
-                    </section>
-                </nav>
-                
-                <div class="footer-info">
-                    <a class="footer-info__logo">
-                        <img src="/assets/logo.png" />
-                    </a>
-                    <div class="footer-info__copyright">© Copyright 2019 BeyondRisc</div>
-                </div>
-            </footer>
+            {% include footer.html %}
         </div>
     </body>
 </html>

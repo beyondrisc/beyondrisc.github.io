@@ -1,0 +1,30 @@
+
+<footer class="page-footer">
+    <nav class="footer-nav">
+        <section class="footer-nav__submenu">
+            <h2>BeyondRISC</h2>
+            <ul>
+                {% for item in site.data.navigation %}
+                <li>
+                    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="footer-nav__submenu">
+            <h2>Blog</h2>
+            <ul>
+                {% for post in site.posts limit:2 %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date: '%B %e' }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </nav>
+    
+    <div class="footer-info">
+        <a class="footer-info__logo" href="/">
+            <img src="/assets/logo.png" />
+        </a>
+        <div class="footer-info__copyright">© Copyright {{ site.time | date: '%Y' }} BeyondRisc</div>
+    </div>
+</footer>

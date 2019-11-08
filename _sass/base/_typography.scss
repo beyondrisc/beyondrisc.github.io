@@ -67,19 +67,23 @@
             url('../fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+$headline-font: 'Josefin Sans';
+$secondary-font: 'Public Sans';
+$text-font: 'Roboto';
+
 body {
-    font-family: 'Roboto';
+    font-family: $text-font;
 }
 
 h1 {
-    font-family: 'Josefin Sans';
+    font-family: $headline-font;
     font-weight: bold;
     font-size: 3.5rem;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Josefin Sans';
+    font-family: $headline-font;
     font-weight: bold;
     font-size: 3rem;
     text-align: left;
