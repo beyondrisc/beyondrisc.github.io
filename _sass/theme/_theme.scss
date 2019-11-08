@@ -1,7 +1,21 @@
-$beyondrisc-light-red: hsl(1, 86%, 69%);
-$beyondrisc-light-blue: hsl(191, 100%, 90%);
+// $beyondrisc-light-red: hsl(1, 86%, 69%);
+// $beyondrisc-light-blue: hsl(191, 100%, 90%);
+// $beyondrisc-blue: hsl(203, 29%, 45%);
 $dark-grey: hsl(209, 11%, 37%);
-$light-blue-gray: hsl(218, 41%, 74%);
+//$light-blue-grey: hsl(218, 41%, 74%);
+$light-grey: hsl(0, 0%, 93%);
+
+$beyondrisc-blue: hsl(203, 100%, 50%);
+//$light-blue: hsl(203, 100%, 80%);
+$beyondrisc-red: hsl(3, 100%, 53%);
+//$light-red: hsl(3, 100%, 80%);
+
+$primary-colour: $beyondrisc-blue;
+$primary-colour-light: tint($primary-colour, 50%);
+$secondary-colour: $beyondrisc-red;
+$secondary-colour-light: tint($secondary-colour, 50%);
+$neutral-colour: $dark-grey;
+$neutral-colour-light: $light-grey;
 
 $link-colour: $dark-grey;
 

@@ -1,9 +1,10 @@
-$footer-text-colour: $light-blue-gray;
-$footer-link-colour: $dark-grey;
-$footer-header-colour: $dark-grey;
+$footer-text-colour: $primary-colour-light;
+$footer-link-colour: $neutral-colour;
+$footer-header-colour: $neutral-colour;
+$footer-background: $neutral-colour-light;
 
 .footer-nav {
-    background-color: hsl(0, 0%, 93%);
+    background-color: $footer-background;
     color: $footer-text-colour;
     font-size: 1.2rem;
 

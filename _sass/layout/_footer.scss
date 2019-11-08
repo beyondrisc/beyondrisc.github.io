@@ -33,5 +33,9 @@
 }
 
 .footer-nav > *:first-child {
-    margin-left: 12%;
+    margin-left: 1rem;    
+    
+    @include respond-to('large') {
+        margin-left: 12%;
+    }
 }

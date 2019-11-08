@@ -4,7 +4,7 @@
 }
 
 .footer-info__copyright {
-    background-color: hsl(203, 29%, 45%);
-    color: hsl(191, 100%, 90%);
+    background-color: $primary-colour;
+    color: tint($primary-colour, 80);
     padding: 0.5rem 1rem;
 }
