@@ -1,6 +1,12 @@
-- name: About
+- name: Our Story
   link: /about
 - name: Team
   link: /team
+- name: Tech
+  link: /tech
+- name: Investors
+  link: /investors
 - name: Blog
   link: /blog
+- name: Contact
+  link: /contact

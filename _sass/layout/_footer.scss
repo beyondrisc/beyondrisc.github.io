@@ -31,12 +31,8 @@
 .footer-nav {
     display: flex;
     flex-direction: row;
-}
+    flex-wrap: wrap;
+    justify-content: start;
 
-.footer-nav > *:first-child {
-    margin-left: 1rem;    
-    
-    @include respond-to('large') {
-        margin-left: 12%;
-    }
+    padding-bottom: 1rem;
 }

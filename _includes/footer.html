@@ -12,19 +12,22 @@
             </ul>
         </section>
         <section class="footer-nav__submenu">
-            <h2>Blog</h2>
-            <ul>
-                {% for post in site.posts limit:2 %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date: '%B %e' }}</li>
+            <h2><a href="/blog">Recent News</a></h2>
+            <table class="footer-nav__blog">
+                {% for post in site.posts limit:3 %}
+                <tr>
+                    <td class="date"><a href="{{ post.url }}">{{ post.date | date: '%b %e' }}</a></td>
+                    <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+                <tr>
                 {% endfor %}
-            </ul>
+            </table>
         </section>
     </nav>
 
-    <div class="footer-info">
-        <a class="footer-info__logo" href="/">
-            <img src="/assets/logo.png" />
-        </a>
-        <div class="footer-info__copyright">© Copyright {{ site.time | date: '%Y' }} BeyondRisc</div>
+    <div class="footer-info">        
+        <div class="footer-info__copyright">
+            © Copyright {{ site.time | date: '%Y' }} 
+            <a href="https://beta.companieshouse.gov.uk/company/12099141">BeyondRISC Limited</a>
+        </div>
     </div>
 </footer>

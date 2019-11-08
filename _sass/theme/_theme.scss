@@ -9,6 +9,9 @@ $beyondrisc-blue: hsl(203, 100%, 50%);
 //$light-blue: hsl(203, 100%, 80%);
 $beyondrisc-red: hsl(3, 100%, 53%);
 //$light-red: hsl(3, 100%, 80%);
+$beyondrisc-purple: hsl(270, 98.3%, 45.9%);
+$beyondrisc-orange: hsl(44.4, 100%, 58.6%);
+$beyondrisc-green: hsl(134, 96.3%, 42.7%);
 
 $primary-colour: $beyondrisc-blue;
 $primary-colour-light: tint($primary-colour, 50%);
@@ -18,6 +21,8 @@ $neutral-colour: $dark-grey;
 $neutral-colour-light: $light-grey;
 
 $link-colour: $dark-grey;
+
+$background-colour: #fffcf7;
 
 body {
     background-image: url('/assets/background-page.png');

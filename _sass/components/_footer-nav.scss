@@ -1,4 +1,5 @@
 $footer-text-colour: $primary-colour-light;
+$footer-date-colour: $primary-colour-light;
 $footer-link-colour: $neutral-colour;
 $footer-header-colour: $neutral-colour;
 $footer-background: $neutral-colour-light;
@@ -28,4 +29,16 @@ $footer-background: $neutral-colour-light;
 .footer-nav__submenu ul {
     list-style-type: none;
     padding: 0;
+
+    column-count: 2;
+}
+
+.footer-nav__blog {
+    td {
+        padding-right: 0.5rem;
+
+        &.date > a {
+            color: $footer-date-colour;
+        }
+    }
 }
