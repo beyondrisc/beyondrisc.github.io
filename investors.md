@@ -1,0 +1,4 @@
+---
+title: Investors
+permalink: /investors
+---

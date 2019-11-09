@@ -1,0 +1,13 @@
+---
+title: Team
+permalink: /team
+---
+
+{% assign sorted_team = site.team | sort: "sort_order" %}
+{% for person in sorted_team %}
+<div class="team-profile">
+    <h2>{{ person.name }}</h2>
+    <img src="{{ person.picture }}" />
+    {{ person.content | markdownify }}
+</div>
+{% endfor %}
