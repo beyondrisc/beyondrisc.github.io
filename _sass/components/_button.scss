@@ -1,0 +1,15 @@
+.button {
+    color: black;
+    background-color: $primary-colour;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+a:hover.button {
+    text-decoration: none;
+    background: $secondary-colour;
+    color: white;
+}

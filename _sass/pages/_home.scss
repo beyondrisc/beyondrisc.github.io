@@ -1,19 +1,38 @@
 .home-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: left;
+    width: 40rem;
+    max-width: 95vw;
+    @include respond-to('large') {
+        margin-left: calc(50% - 20rem);
+    }
 
-    text-align: center;
+    .home-hero__bordered {
+        position: relative;
+    }
+
+    .home-hero__bordered:before {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 100%;
+        top: 0;
+        left: -2rem;
+        background-color: $secondary-colour;
+    }
 
     h1 {
         width: 40rem;
         max-width: 95vw;
+        color: $primary-colour;
+        font-family: 'Work Sans';
+        font-weight: 700;
+        text-transform: lowercase;
     }
 
     p {
-        font-family: 'Public Sans';
-        font-weight: normal;
-        font-size: 2rem;
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 1.2rem;
         width: 40rem;
         max-width: 95vw;
     }

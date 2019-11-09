@@ -1,24 +1,21 @@
-$footer-text-colour: $primary-colour-light;
-$footer-date-colour: $primary-colour-light;
-$footer-link-colour: $neutral-colour;
-$footer-header-colour: $neutral-colour;
-$footer-background: $neutral-colour-light;
-
 .footer-nav {
-    background-color: $footer-background;
-    color: $footer-text-colour;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-family: 'Inter';
+
+    padding-bottom: 1rem;
 
     h2 {
-        color: $footer-header-colour;
-        font-family: $text-font;
         font-size: 1.2rem;
         font-weight: 500;
         margin-top: 2rem;
     }
 
-    a {
-        color: $footer-link-colour;
+    a:hover {
+        text-decoration: none;
     }
 }
 
@@ -38,7 +35,7 @@ $footer-background: $neutral-colour-light;
         padding-right: 0.5rem;
 
         &.date > a {
-            color: $footer-date-colour;
+            color: $primary-colour-light;
         }
     }
 }
