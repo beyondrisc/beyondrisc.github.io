@@ -9,8 +9,9 @@
 @import 'theme/theme';
 
 @import 'layout/grid';
-@import 'layout/blog-posts';
 
+@import 'base/work-sans';
+@import 'base/inter';
 @import 'base/typography';
 
 @import 'components/logo';
@@ -22,5 +23,6 @@
 @import 'components/blog-post-featured';
 @import 'components/button';
 @import 'components/page-title';
+@import 'components/blog-posts';
 
 @import 'pages/home';
