@@ -23,7 +23,6 @@ All rights reserved by BeyondRISC.
 
 ### Third-party components
 
-* Josefin Sans - [OFL 1.1](assets/fonts/josefin-sans-licence.txt)
-* Public Sans - [OFL 1.1](assets/fonts/PublicSans-licence.txt)
-* Roboto - [Apache-2.0](assets/fonts/roboto-licence.txt)
-* Bootstrap - [MIT](_sass/vendor/bootstrap-reboot-licence.txt)
+* [Inter](https://rsms.me/inter/) - [OFL 1.1](assets/fonts/inter-licence.txt)
+* [Work Sans](https://weiweihuanghuang.github.io/Work-Sans/) - [OFL 1.1](assets/fonts/work-sans-licence.txt)
+* [Bootstrap](https://getbootstrap.com/docs/4.0/content/reboot/) - [MIT](_sass/vendor/bootstrap-reboot-licence.txt)
