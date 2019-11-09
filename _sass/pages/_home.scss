@@ -25,14 +25,14 @@
 
     h1 {
         color: $primary-colour;
-        font-family: 'Work Sans';
+        font-family: $headline-font;
         font-weight: 700;
         text-transform: lowercase;
         margin-left: 0;
     }
 
     p {
-        font-family: 'Inter';
+        font-family: $text-font;
         font-weight: 300;
         font-size: 1.2rem;
     }

@@ -17,13 +17,13 @@
 }
 
 .main-menu li {
-    font-family: 'Inter';
+    font-family: $text-font;
     font-size: 0.9rem;
-    margin: 0.3rem 1rem 0.3rem 1rem;
+    margin: 0.3rem 1rem;
 
     a {
-        color: white;
-        transition: 0.3s all ease-in-out;
+        color: $text-colour;
+        @include link-animation
     }
 
     a:hover {

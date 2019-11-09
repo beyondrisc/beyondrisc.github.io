@@ -4,4 +4,8 @@
     @include respond-to('large') {
         padding: 0.5rem 4rem;
     }
+
+    a:hover {
+        color: $primary-colour-light;
+    }
 }

@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    font-family: 'Inter';
+    font-family: $text-font;
 
     padding-bottom: 1rem;
     margin-left: -3rem;
@@ -14,12 +14,14 @@
     }
 
     h2 {
+        font-family: $text-font;
         font-size: 1rem;
         font-weight: 500;
         margin-top: 1rem;
     }
 
     a:hover {
+        color: $primary-colour-light;
         text-decoration: none;
     }
 }
