@@ -21,7 +21,7 @@
     font-size: 0.9rem;
     margin: 0.3rem 1rem;
 
-    a {
+    a, a:visited {
         color: $text-colour;
         @include link-animation
     }

@@ -2,8 +2,10 @@ $beyondrisc-green: hsl(134, 97%, 76%);
 
 $primary-colour: $beyondrisc-green;
 $primary-colour-light: tint($primary-colour, 50%);
+$primary-colour-contrast: black;
 $secondary-colour: hsl(127, 9%, 65%);
 $secondary-colour-light: tint($secondary-colour, 50%);
+$secondary-colour-contrast: white;
 $text-colour: hsl(0, 0%, 100%);
 
 body {

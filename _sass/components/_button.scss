@@ -1,5 +1,5 @@
 .button {
-    color: black;
+    color: $primary-colour-contrast;
     background-color: $primary-colour;
     font-size: 1.2rem;
     font-family: $text-font;
@@ -9,8 +9,12 @@
     display: inline-block;
 }
 
+a:visited.button {
+    color: $primary-colour-contrast;
+}
+
 a:hover.button {
     text-decoration: none;
     background: $secondary-colour;
-    color: white;
+    color: $secondary-colour-contrast;
 }
