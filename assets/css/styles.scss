@@ -6,12 +6,12 @@
 
 @import 'vendor/bootstrap-reboot';
 
-@import 'base/typography';
-
 @import 'theme/theme';
 
 @import 'layout/grid';
 @import 'layout/blog-posts';
+
+@import 'base/typography';
 
 @import 'components/logo';
 @import 'components/footer-nav';
@@ -21,5 +21,6 @@
 @import 'components/blog-post-summary';
 @import 'components/blog-post-featured';
 @import 'components/button';
+@import 'components/page-title';
 
 @import 'pages/home';

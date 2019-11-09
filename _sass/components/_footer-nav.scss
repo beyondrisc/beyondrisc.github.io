@@ -1,5 +1,5 @@
 .footer-nav {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,11 +7,16 @@
     font-family: 'Inter';
 
     padding-bottom: 1rem;
+    margin-left: -3rem;
+
+    @include respond-to('large') {
+        margin-left: 0;
+    }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     a:hover {
@@ -26,7 +31,6 @@
 .footer-nav__submenu ul {
     list-style-type: none;
     padding: 0;
-
     column-count: 2;
 }
 

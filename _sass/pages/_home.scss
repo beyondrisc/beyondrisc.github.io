@@ -1,9 +1,11 @@
 .home-hero {
     text-align: left;
     width: 40rem;
-    max-width: 95vw;
+    max-width: 80vw;
+    margin: 0 auto;
+
     @include respond-to('large') {
-        margin-left: calc(50% - 20rem);
+        margin-left: 20vw;
     }
 
     .home-hero__bordered {
@@ -21,19 +23,16 @@
     }
 
     h1 {
-        width: 40rem;
-        max-width: 95vw;
         color: $primary-colour;
         font-family: 'Work Sans';
         font-weight: 700;
         text-transform: lowercase;
+        margin-left: 0;
     }
 
     p {
         font-family: 'Inter';
         font-weight: 300;
         font-size: 1.2rem;
-        width: 40rem;
-        max-width: 95vw;
     }
 }
