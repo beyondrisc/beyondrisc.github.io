@@ -6,6 +6,7 @@
 
     @include respond-to('large') {
         margin-left: 20vw;
+        margin-top: 5rem;
     }
 
     .home-hero__bordered {
