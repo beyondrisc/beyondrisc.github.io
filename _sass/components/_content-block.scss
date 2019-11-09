@@ -6,7 +6,6 @@
     width: 40rem;
     max-width: 95vw;
     margin: 0 auto;
-    padding: 1rem 0;
 
     @include respond-to('large') {
         margin-left: 20vw;

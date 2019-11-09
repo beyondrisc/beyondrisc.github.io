@@ -2,12 +2,16 @@
 layout: page
 ---
 
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
+<p class="post-info">
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    {% if author %}
+    <a href="{{ author.url }}">{{ author.title }}</a> on
+    {% endif %}
+    {{ page.date | date: "%B %e %Y" }}
 </p>
+
+{% if page.image %}
+<img src="{{ page.image }}" />
+{% endif %}
 
 {{ content }}
