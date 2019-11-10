@@ -2,7 +2,7 @@
 permalink: /about
 title: Our vision
 ---
-
+ 
 ### Devices people can trust
 
 Our vision is a world in which people can buy a device for their home, factory or airplane and trust that 
