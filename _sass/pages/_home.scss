@@ -1,11 +1,9 @@
 .home-hero {
     text-align: left;
+
+    margin-top: 5vw;
     
     @include column-width;
-
-    @include respond-to('large') {
-        margin-top: 5rem;
-    }
 
     .home-hero__bordered {
         position: relative;
