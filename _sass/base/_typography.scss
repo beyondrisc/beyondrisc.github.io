@@ -1,6 +1,10 @@
 $headline-font: 'Work Sans';
 $text-font: 'Inter';
 
+html {
+    font-size: 22px;
+}
+
 body {
     font-family: $text-font;
     font-weight: 400;
@@ -9,28 +13,44 @@ body {
 h1 {
     font-family: $headline-font;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: left;
     color: $primary-colour;
+
+    @include respond-to('medium') {
+        font-size: 3.5rem;
+    }
 }
 
 h2 {
     font-family: $headline-font;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: left;
+
+    @include respond-to('medium') {
+        font-size: 2.5rem;
+    }
 }
 
 h3 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: left;
+
+    @include respond-to('medium') {
+        font-size: 2rem;
+    }
 }
 
 h4 {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 0.4rem;
     text-align: left;
+
+    @include respond-to('medium') {
+        font-size: 1.4rem;
+    }
 }
 
 p {
