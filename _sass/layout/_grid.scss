@@ -8,7 +8,28 @@ $breakpoints: (
   'huge': (min-width: 1281px),
 );
 
-$column-width: 100%;
+@mixin column-width {
+    width: 90%;
+    margin: 0 5%;
+    
+    @include respond-to('large') {
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@mixin two-column-width {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    @include respond-to('large') {
+        width: 50%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
 
 html {
     height: 100%;

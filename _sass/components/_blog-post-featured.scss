@@ -3,36 +3,24 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
-    margin: 0 auto;
+
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 
     &__image {
         flex: 1 1 auto;
-        max-width: $column-width;
-        min-width: 0;
 
-        padding: 1rem;
-        margin: 1rem;
+        @include two-column-width;
     }
 
     &__content {
         flex: 1 1 auto;
-        max-width: $column-width;
-        min-width: 0;
 
-        padding: 1rem;
-        margin: 1rem;
-        margin-top: 4rem;
+        @include two-column-width;
         position: relative;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: -2rem;
-            left: 0;
-            width: 100%;
-            height: 1rem;
-            background-color: $secondary-colour;
+        
+        & > *:first-child {
+            margin-top: 0;
         }
     }
 }

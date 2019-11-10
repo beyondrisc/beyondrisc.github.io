@@ -8,7 +8,7 @@ permalink: /team
 <div class="team-profile">
     <h2>{{ person.name }}</h2>
     <img src="{{ person.picture }}" />
-    <h4>{{ person.role }}</h4>
+    <h3>{{ person.role }}</h3>
     {{ person.content | markdownify }}
 </div>
 {% endfor %}

@@ -5,18 +5,19 @@
     align-items: flex-start;
 
     flex: 1 1 auto;
-    max-width: $column-width;
-    min-width: 0;
-    width: 40%;
 
-    margin: 1rem;
+    padding: 1rem 4%;
+
+    border-top: 1px solid $text-colour;
+
+    &:nth-child(odd) {
+        border-right: 1px solid $text-colour;
+    }
 
     &__image {
         flex: 1 1 auto;
         min-width: 0;
         max-width: 100%;
-
-        padding: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -24,6 +25,8 @@
         flex: 1 1 auto;
         min-width: 0;
 
-        padding: 1rem;
+        & > *:first-child {
+            margin-top: 0;
+        }
     }
 }

@@ -1,27 +1,10 @@
 .blog-posts {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 95vw;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 5rem auto 0;
-    width: $column-width;
-
-    @include respond-to('large') {
-        margin-left: 20vw;
-        margin-right: 20vw;
-        max-width: 60vw;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    @include column-width;
 }
 
 .blog-posts-featured {
-    max-width: 95vw;
-    margin: 0 auto;
-    width: $column-width;
-
-    @include respond-to('large') {
-        margin-left: 20vw;
-        margin-right: 20vw;
-        max-width: 60vw;
-    }
+    @include column-width;
 }
