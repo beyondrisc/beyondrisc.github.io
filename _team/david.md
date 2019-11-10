@@ -2,6 +2,7 @@
 name: David May
 picture: /assets/images/team/david-may.png
 sort_order: 3
+role: Lead architect
 ---
 Professor of Computer Architecture, David May has over 40 years experience in processor design, including two successful startups: Inmos and XMOS. 
 

@@ -2,6 +2,7 @@
 name: Andres Amaya Garcia
 picture: /assets/images/team/andres-amaya-garcia.png
 sort_order: 2
+role: CTO
 ---
 Andres worked in IoT software for ARM for 4 years, including working with key standards such as TLS. 
 

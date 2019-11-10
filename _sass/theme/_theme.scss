@@ -16,7 +16,7 @@ body {
     color: $text-colour;
 }
 
-a {
+a, a:active {
     color: $text-colour;
 
     &:hover {
@@ -28,10 +28,34 @@ a {
     }
 }
 
+.content-block a {
+    text-decoration: underline;
+}
+
 img {
     width: 100%;
 }
 
+blockquote {
+  background: #333;
+  border-left: 10px solid #f0f0f0;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #f0f0f0;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
 @mixin link-animation {
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s color ease-in-out
+              , 0.3s background-color ease-in-out;
 }

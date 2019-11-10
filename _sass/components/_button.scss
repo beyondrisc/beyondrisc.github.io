@@ -9,6 +9,10 @@
     display: inline-block;
 }
 
+a.button {
+    text-decoration: none;
+}
+
 a:visited.button {
     color: $primary-colour-contrast;
 }

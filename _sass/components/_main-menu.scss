@@ -14,12 +14,20 @@
     margin: 0 1rem 0 1rem;
     padding-left: 0;
     width: 100%;
+
+    @include respond-to('large') {
+        margin: 0 0.5rem 0 0.5rem;
+    }
 }
 
 .main-menu li {
     font-family: $text-font;
     font-size: 0.9rem;
     margin: 0.3rem 1rem;
+    
+    @include respond-to('large') {
+        margin: 0.2rem 0.5rem;
+    }
 
     a, a:visited {
         color: $text-colour;

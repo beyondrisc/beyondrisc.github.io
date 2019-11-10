@@ -2,6 +2,7 @@
 name: Ed Nutting
 picture: /assets/images/team/ed-nutting.png
 sort_order: 1
+role: CEO
 ---
 Ed began programming in C# at the age of 8 and created his first start-up at age 15.
 

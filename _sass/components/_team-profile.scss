@@ -1,7 +1,35 @@
 .team-profile {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        text-align: center;
+        
+        @include respond-to('small') {
+            text-align: left;
+        }
+    }
+
+    p {
+        text-align: left;
+    }
+
     img {
         width: 10rem;
-        float: left;
         margin: 1rem;
+        text-align: center;
+
+        @include respond-to('small') {
+            float: left;
+            margin: 1rem 1rem 5rem 1rem;
+        }
+
+        
+        @include respond-to('huge') {
+            width: 15rem;
+        }
     }
 }
