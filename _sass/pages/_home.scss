@@ -1,12 +1,14 @@
 .home-hero {
     text-align: left;
     width: $column-width;
-    max-width: 80vw;
-    margin: 0 auto;
+    max-width: 90vw;
+    margin: 0 5vw;
 
     @include respond-to('large') {
         margin-left: 20vw;
+        margin-right: 20vw;
         margin-top: 5rem;
+        max-width: 60vw;
     }
 
     .home-hero__bordered {
