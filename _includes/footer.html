@@ -11,17 +11,6 @@
                 {% endfor %}
             </ul>
         </section>
-        <section class="footer-nav__submenu">
-            <h2><a href="/blog">Recent News</a></h2>
-            <table class="footer-nav__blog">
-                {% for post in site.posts limit:3 %}
-                <tr>
-                    <td class="date"><a href="{{ post.url }}">{{ post.date | date: '%b %e' }}</a></td>
-                    <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-                <tr>
-                {% endfor %}
-            </table>
-        </section>
     </nav>
 
     <div class="footer-info">
