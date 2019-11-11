@@ -32,6 +32,18 @@ $breakpoints: (
     }
 }
 
+@mixin two-column-width-margin {
+    width: 95%;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    
+    @include respond-to('medium') {
+        width: 45%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
 html {
     height: 100%;
 }
