@@ -7,7 +7,7 @@ layout: page
     {% if author %}
     <a href="{{ author.url }}">{{ author.title }}</a> on
     {% endif %}
-    {{ page.date | date: "%B %e %Y" }}
+    <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %e %Y" }}</time>
 </p>
 
 {% if page.image %}
