@@ -105,3 +105,12 @@ body {
 .footer-info {
     grid-area: info;
 }
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

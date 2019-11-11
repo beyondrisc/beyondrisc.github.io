@@ -14,16 +14,17 @@
         {% seo %}
     </head>
     <body {% if page.theme %}class="theme-{{ page.theme }}"{% endif %}>
+        <a href="#main" class="hidden">Skip to main content</a>
         <div class="page-grid">
             <div class="main-logo">
                 <a href="/">
-                    <img src="/assets/logo.svg" />
+                    <img src="/assets/logo.svg" alt="BeyondRISC" />
                 </a>
             </div>
             {% include navigation.html %}
-            <section class="page-content">
+            <main class="page-content" id="main" role="main">
                 {{ content }}
-            </section>
+            </main>
             {% include footer.html %}
         </div>
     </body>
