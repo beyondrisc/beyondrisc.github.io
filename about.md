@@ -3,6 +3,12 @@ permalink: /about
 title: Our vision
 ---
 
+<div class="featured-items">
+
+<div class="featured-item" markdown="block">
+
+![](/assets/images/about/trust.svg)
+
 ## Devices people can trust
 
 Our vision is a world in which people can buy a device for their home, factory or airplane and trust that 
@@ -10,6 +16,11 @@ it will work - now and in the future.
 
 This means fully eliminating well-known issues in security, reliability and robustness. We believe this
 is only possible using hardware - the level at which designers can enforce correctness and safety.
+</div>
+
+<div class="featured-item" markdown="block">
+
+![](/assets/images/about/scaling.svg)
 
 ## Scaling in both directions
 
@@ -18,6 +29,9 @@ Our vision is to enable advances in computer science to reach every device - big
 Small devices, such as Internet of Things devices, are particularly far behind with programming language support. 
 This is creating a plethora of problems from lack of suitable software developers, to recurring security issues
 that should have been eliminated two decades ago.
+</div>
+
+</div>
 
 ----
 

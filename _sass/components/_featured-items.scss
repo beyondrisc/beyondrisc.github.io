@@ -1,0 +1,30 @@
+.featured-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-item {
+    width: auto;
+    flex: 1 0 100%;
+    padding: 2%;
+
+    @include respond-to('medium') {
+        flex: 1 1 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin: 0 auto;
+        height: 10rem;
+        width: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

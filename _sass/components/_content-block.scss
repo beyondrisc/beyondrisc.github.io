@@ -4,4 +4,10 @@
     align-items: left;
 
     @include column-width;
+
+    img {
+        display: block;
+        margin: 2rem auto;
+        width: 60%;
+    }
 }
