@@ -38,7 +38,7 @@ $featured-item-padding: 3%;
         }
 
         & > * {
-            transition: 0.5s opacity ease-in-out;
+            transition: 0.3s opacity ease-in-out;
             opacity: 1;
         }
 
@@ -52,7 +52,6 @@ $featured-item-padding: 3%;
             &:hover > *, 
             &:focus-within > * {
                 opacity: 0;
-                visibility: hidden;
             }
             
             & > *.hidden {
@@ -66,7 +65,6 @@ $featured-item-padding: 3%;
 
                 opacity: 0;
                 display: flex;
-                visibility: hidden;
 
                 flex-direction: column;
                 align-content: center;
@@ -76,7 +74,6 @@ $featured-item-padding: 3%;
             &:hover > *.hidden, 
             &:focus-within > *.hidden {
                 opacity: 1;
-                visibility: visible;
             }
         }
     }
