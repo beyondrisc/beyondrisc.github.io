@@ -15,6 +15,11 @@ body {
     background-attachment: fixed;
     background-size: contain, cover;
     color: $text-colour;
+
+    @media print {
+        background: none;
+        color: black !important;
+    }
 }
 
 ::selection {
@@ -30,6 +35,10 @@ a, a:active {
 
     &:visited {
         color: $text-colour;
+    }
+
+    @media print {
+        color: black !important;
     }
 }
 
@@ -48,6 +57,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #f0f0f0;
   content: open-quote;
@@ -56,6 +66,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
