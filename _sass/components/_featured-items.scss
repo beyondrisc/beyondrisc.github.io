@@ -49,12 +49,12 @@ $featured-item-padding: 3%;
         }
 
         @media(hover: hover) {
-            &:hover > *, 
-            &:focus-within > * {
+            &.hoverable:hover > *, 
+            &.hoverable:focus-within > * {
                 opacity: 0;
             }
             
-            & > *.hidden {
+            &.hoverable > *.hidden {
                 position: absolute;
                 top: 2 * $featured-item-padding;
                 left: 2 * $featured-item-padding;
@@ -71,8 +71,8 @@ $featured-item-padding: 3%;
                 justify-content: center;
             }
             
-            &:hover > *.hidden, 
-            &:focus-within > *.hidden {
+            &.hoverable:hover > *.hidden, 
+            &.hoverable:focus-within > *.hidden {
                 opacity: 1;
             }
         }
