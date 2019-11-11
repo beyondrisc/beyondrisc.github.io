@@ -17,6 +17,10 @@ body {
     color: $text-colour;
 }
 
+::selection {
+    background-color: shade($secondary-colour, 40);
+}
+
 a, a:active {
     color: $text-colour;
 
