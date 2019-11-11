@@ -19,7 +19,7 @@
 
     img {
         width: 10rem;
-        margin: 1rem;
+        margin: 1rem auto;
         text-align: center;
 
         @include respond-to('small') {
