@@ -21,8 +21,6 @@ $featured-item-padding: 3%;
             flex: 1 1 0;
         }
 
-        cursor: pointer;
-
         position: relative;
         text-align: center;
 
@@ -48,6 +46,8 @@ $featured-item-padding: 3%;
 
         @media not print and (hover: hover) {
             &.hoverable {
+                cursor: pointer;
+
                 padding-bottom: calc(#{$featured-item-padding} + 1.5rem);
             }
 
