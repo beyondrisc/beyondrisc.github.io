@@ -6,7 +6,15 @@
 
     <i class="fas {{ include.val.icon }}" aria-hidden="hidden"></i>
     <h2>{{ include.val.title }}</h2>
-    <p>{{ include.val.text }}</p>
+    {% if include.val.text %}
+        <p>{{ include.val.text }}</p>
+    {% endif %}
+
+    {% if include.val.buttons %}
+        {% for button in include.val.buttons %}
+            <a class="button" href="{{ button.url }}">{{ button.text }}</a>
+        {% endfor %}
+    {% endif %}
     
     {% if include.val.hover %}
     <div class="hover-instruction" aria-hidden="hidden">

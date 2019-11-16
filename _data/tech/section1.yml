@@ -1,0 +1,9 @@
+- icon: fa-lock
+  title: Security
+  text: We eliminate the causes of over half of IoT device weaknesses. We also deliver fast, efficient error checking and containment.
+- icon: fa-tachometer-alt
+  title: Performance
+  text: We can accelerate your code by 1.5x to 7x. We deliver hard real-time performance for modern programming languages, like C# and Python, as well as older languages like C/C++.
+- icon: fa-chart-line
+  title: Productivity
+  text: We enable you to use modern programming languages, like C# and Python, in production IoT devices, not just the lab.

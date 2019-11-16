@@ -13,7 +13,6 @@ $featured-item-padding: 3%;
         flex: 1 0 100%;
         margin: 2%;
         padding: $featured-item-padding;
-        padding-bottom: calc(#{$featured-item-padding} + 1.5rem);
         
         @include respond-to('medium') {
             flex: 1 1 0;
@@ -44,6 +43,10 @@ $featured-item-padding: 3%;
         }
 
         @media not print and (hover: hover) {
+            &.hoverable {
+                padding-bottom: calc(#{$featured-item-padding} + 1.5rem);
+            }
+
             &.hoverable > .hover-instruction {
                 font-size: 0.7rem;
                 color: shade($text-colour, 20);
