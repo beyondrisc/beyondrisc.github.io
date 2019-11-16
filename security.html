@@ -5,18 +5,134 @@ permalink: /security
 
 <h1>Security</h1>
 
+<h2><i class="far fa-newspaper" aria-hidden="hidden"></i>&nbsp;In the news</h2>
 <p>
-TODO: Background info
+    Headlines about security failings in computer systems are now so frequent, they have become routine.
 </p>
-
+<blockquote>
+    <p>
+        BBC: WhatsApp discovers 'targeted' surveillance attack
+    </p>
+    <div class="reference">
+        <a href="https://www.bbc.co.uk/news/technology-48262681">Source</a>
+    </div>
+</blockquote>
 <p>
-TODO: Tech explanation
+    Some security flaws are common but easily fixed. For example, weak default passwords on home routers
+    have gradually been eliminated through industry wide adoption of best practices.
 </p>
+<p>
+    Unfortunately, other problems persist and continue to have an impact on the lives of thousands of people.
+</p>
+<blockquote>
+    <p>
+        The Register: Cloudbleed: Big web brands 'leaked crypto keys, personal secrets'
+    </p>
+    <div class="reference">
+        <a href="https://www.theregister.co.uk/2017/02/24/cloudbleed_buffer_overflow_bug_spaffs_personal_data/">Source</a>
+    </div>
+</blockquote>
+<blockquote>
+    <p>
+        Google Project Zero: iOS exploit chains found in the wild
+    </p>
+    <div class="reference">
+        <a href="https://googleprojectzero.blogspot.com/2019/08/a-very-deep-dive-into-ios-exploit.html">Source</a>
+    </div>
+</blockquote>
+<p>
+    As the internet of things grows, billions more devices with many of the same problems are likely to hit the market.
+</p>
+<blockquote>
+    <p>
+        ZDNet: Millions of IoT devices hit by 'Devil's Ivy' bug in open source code library
+    </p>
+    <div class="reference">
+        <a href="https://www.zdnet.com/article/millions-of-iot-devices-hit-by-devils-ivy-bug-in-open-source-code-library/">Source</a>
+    </div>
+</blockquote>
 
 <h1>For you</h1>
 
+<p>BeyondRISC's new architecture is the only one in the world that fully eliminates common memory safety issues, such as
+buffer overflows.</p>
+
 {% include featured_items.html vals=site.data.security.people %}
 
-<h1>How it works</h1>
+<h1>Partner with us</h1>
+
+<p>
+    We will be building demonstrations on our platform in the coming year. 
+    If you'd like to partner with us to explore how BeyondRISC can help your systems, please <a href="/contact">contact us</a>.
+</p>
 
 {% include featured_items.html vals=site.data.security.how %}
+
+<h1>More detail</h1>
+
+<h2><i class="fas fa-tools" aria-hidden="hidden"></i>&nbsp;Avoiding disaster</h2>
+<p>
+    Fortunately, we can eliminate some of the most common problems - starting with memory safety issues, often known
+    as 'buffer overflows'. All of the issues linked to above are the result of this single class of problem. 
+    They account for up to <a href="https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/">70% of the bugs in C/C++ software</a>
+    - and most IoT software is <a href="https://m.eet.com/media/1246048/2017-embedded-market-study.pdf">written in C/C++</a>.
+</p>
+<p>
+    Using our technology, the security failures quoted above would never have occurred. At worst, they would have 
+    resulted in error messages to the user. A crashed app is far better than a virus infecting a device to spy on
+    it or hijack it for a botnet.
+</p>
+
+<h2><i class="fas fa-lightbulb" aria-hidden="hidden"></i>&nbsp;How does our tech eliminate memory safety issues?</h2>
+
+<p>
+Our hardware enforces an object-based memory layout. This applies to the whole system without exception. 
+As a result, we can fully eliminate common memory safety issues, including buffer overflows.
+</p>
+
+<p style="font-weight: bold">What is an 'object-based memory layout'?</p>
+
+<p>
+Current computer hardware uses a contiguous, flat memory, where each slot in the memory is addressable by a number
+from 0 up to the size of the memory. Modern programming languages add an extra layer of abstraction to divide up this
+flat space into objects.
+</p>
+
+<p>
+An 'object' is a chunk of memory of a known size. This means when a program accesses data for a particular object, 
+the system can check that the program is looking within the 'bounds' of the object. In other words, the system can
+check that you're not trying to put 101 pieces of data in an object that can only fit 100. Or that you're trying to
+access the 11th piece of data from an object that only contains 10 pieces.
+</p>
+
+<p style="font-weight: bold">Surely we should already be doing this on every system?</p>
+
+<p>
+Unfortunately, the software approaches to enforcing this 'objects' view of memory are too heavyweight for IoT devices.
+They kill performance, consume large quantities of resources and, due to lack of hardware support, still can't fully
+enforce the checks. Malicious software may still be able to circumvent the software systems.
+</p>
+
+<h2><i class="fas fa-question" aria-hidden="hidden"></i>&nbsp;System resources cost</h2>
+
+<p>
+After over 3 years of research, including two of us undertaking PhDs, we've been able to design our hardware
+so it only requires 3% additional memory resources versus a traditional system, improves performance and 
+can be implemented in a processor suitable for IoT devices.
+</p>
+
+<p>
+    <a class="button" href="/performance">More about performance</a>
+</p>
+
+<h2><i class="fas fa-question" aria-hidden="hidden"></i>&nbsp;Older programming languages</h2>
+
+<p>
+We can still support older languages such as C and C++! If your code was well-formed then we will be able to
+compile and execute on our platform. If, however, your code was not well-formed or contained buffer overflow
+bugs, then our system will catch them.
+</p>
+
+<p>
+    <a class="button" href="/productivity">More about languages</a>
+</p>
