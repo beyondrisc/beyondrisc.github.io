@@ -1,0 +1,12 @@
+- title: Today
+  subtitle: Seed fund
+  text: £1m will enable us to expand our team to 7 people and produce a prototype silicon chip.
+  button:
+    url: /investors
+    text: Seed investment
+- title: 12 months
+  subtitle: Platform samples
+  text: We will be running demos built with several partners on our prototype chip. We will be ready to move to production. Our team will have grown to 10 people, including engineers, operations, marketing and sales.
+- title: 18 months
+  subtitle: Platform production
+  text: With Series A funding and a team of 16 people we will tape-out our chip for production and begin selling our platform as an alternative to Arduino through international distributors. This will establish a wide base of engineers and students using our technology.

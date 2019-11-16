@@ -1,0 +1,22 @@
+{% if include.val.hover %}
+<div class="featured-item hoverable">
+{% else %}
+<div class="featured-item">
+{% endif %}
+
+    <i class="fas {{ include.val.icon }}" aria-hidden="hidden"></i>
+    <h2>{{ include.val.title }}</h2>
+    <p>{{ include.val.text }}</p>
+    
+    {% if include.val.hover %}
+    <div class="hover-instruction" aria-hidden="hidden">
+        More info <i class="fas fa-hand-pointer" aria-hidden="hidden"></i>
+    </div>
+
+    <div class="hidden">
+        <p>{{ include.val.hover.text }}</p>
+        <a class="button" href="{{ include.val.hover.button.url }}">{{ include.val.hover.button.text }}</a>
+    </div>
+    {% endif %}
+
+</div>

@@ -1,0 +1,11 @@
+<div class="timeline-item">
+    <hgroup>
+        <h2 class="timeline-item__time">{{ include.val.title }}</h2>
+        <h3>{{ include.val.subtitle }}</h3>
+    </hgroup>
+    <p>{{ include.val.text }}</p>
+
+    {% if include.val.button %}
+    <a href="{{ include.val.button.url }}" class="button">{{ include.val.button.text }}</a>
+    {% endif %}
+</div>
