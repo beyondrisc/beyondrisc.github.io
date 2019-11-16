@@ -1,3 +1,20 @@
+{% comment %}
+    Data item format example:
+        - icon: [Required] fa-handshake
+          title: [Required] Devices people can trust
+          text: [Optional] We see a world in which people can buy a device for their home, factory or airplane and trust that it will work - now and in the future.
+          buttons: [Optional]
+            - url: /anUrl1
+              text: Some button text 1
+            - url: /anUrl2
+              text: Some button text 2
+          hover: [Optional]
+            text: This means eliminating issues in security, reliability and robustness, such as 'buffer overflows', which cause 70% of C++ problems annually.
+            button: [Optional]
+                url: /tech#security
+                text: Show me how
+{% endcomment %}
+
 {% if include.val.hover %}
 <div class="featured-item hoverable">
 {% else %}
@@ -17,14 +34,16 @@
     {% endif %}
     
     {% if include.val.hover %}
-    <div class="hover-instruction" aria-hidden="hidden">
-        More info <i class="fas fa-hand-pointer" aria-hidden="hidden"></i>
-    </div>
+        <div class="hover-instruction" aria-hidden="hidden">
+            More info <i class="fas fa-hand-pointer" aria-hidden="hidden"></i>
+        </div>
 
-    <div class="hidden">
-        <p>{{ include.val.hover.text }}</p>
-        <a class="button" href="{{ include.val.hover.button.url }}">{{ include.val.hover.button.text }}</a>
-    </div>
+        <div class="hidden">
+            <p>{{ include.val.hover.text }}</p>
+            
+            {% if include.val.hover.button %}
+                <a class="button" href="{{ include.val.hover.button.url }}">{{ include.val.hover.button.text }}</a>
+            {% endif %}
+        </div>
     {% endif %}
-
 </div>
