@@ -3,14 +3,14 @@
   text: We see a world in which people can buy a device for their home, factory or airplane and trust that it will work - now and in the future.
   hover:
     text: This means eliminating issues in security, reliability and robustness, such as 'buffer overflows', which cause 70% of C++ problems annually.
-    button:
-      url: /tech#security
-      text: Show me how
+    buttons:
+      - url: /tech#security
+        text: Show me how
 - icon: fa-expand-arrows-alt
   title: Scaling in every direction
   text: We want to enable modern software engineering to reach every device - big, small, mobile or otherwise.
   hover:
     text: Internet of Things devices are particularly far behind with programming language support.
-    button:
-      url: /tech#languages
-      text: Our tech fixes this
+    buttons:
+      - url: /tech#languages
+        text: Our tech fixes this

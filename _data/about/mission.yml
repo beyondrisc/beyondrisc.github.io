@@ -3,14 +3,14 @@
   text: We deliver formally proven security without performance losses. We've started with memory safety - the cause of 70% of issues in IoT device software.
   hover:
       text: Our security features are enforced and proven at the hardware level. It's the only way to be sure that these issues are fully eliminated.
-      button:
-          url: /tech#security
-          text: Show me how
+      buttons:
+          - url: /tech#security
+            text: Show me how
 - icon: fa-code
   title: Modern languages everywhere
   text: Programming languages have come a long way in the last 25 years. They significantly improve productivity, accessibility, maintainability and security. We want every developer to have access to these improvements.
   hover:
       text: There's also a growing skills shortage for developers of older languages, like C/C++, that are currently needed for IoT development. By making modern languages available for IoT, we can help companies avoid this.
-      button:
-          url: /tech#languages
-          text: Show me how
+      buttons:
+          - url: /tech#languages
+            text: Show me how

@@ -10,9 +10,9 @@
               text: Some button text 2
           hover: [Optional]
             text: This means eliminating issues in security, reliability and robustness, such as 'buffer overflows', which cause 70% of C++ problems annually.
-            button: [Optional]
-                url: /tech#security
-                text: Show me how
+            buttons: [Optional]
+                - url: /tech#security
+                  text: Show me how
 {% endcomment %}
 
 {% if include.val.hover %}
@@ -41,8 +41,10 @@
         <div class="hidden">
             <p>{{ include.val.hover.text }}</p>
             
-            {% if include.val.hover.button %}
-                <a class="button" href="{{ include.val.hover.button.url }}">{{ include.val.hover.button.text }}</a>
+            {% if include.val.hover.buttons %}
+                {% for button in include.val.hover.buttons %}
+                    <a class="button" href="{{ button.url }}">{{ button.text }}</a>
+                {% endfor %}
             {% endif %}
         </div>
     {% endif %}
