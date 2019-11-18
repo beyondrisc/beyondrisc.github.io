@@ -1,0 +1,36 @@
+.product-items {
+    margin: 1rem 0;
+}
+
+.product-item {
+    display: flex;
+    padding: 1rem 0.4rem;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to('medium') {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-item__icon {
+        font-size: 3rem;
+        margin: 1rem;
+        display: block;
+    }
+
+    img.product-item__icon {
+        width: 15rem;
+    }
+
+    .product-item__heading {
+        width: 100%;
+
+        @include respond-to('medium') {
+            margin: 1rem;
+            flex-basis: 20%;
+        }
+    }
+}
+
+
