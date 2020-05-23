@@ -19,7 +19,7 @@ This site roughly follows the [Sass Guidelines](https://sass-guidelin.es/).
 
 ## Licence
 
-All rights reserved by BeyondRISC.
+All rights reserved by BeyondRISC Limited.
 
 ### Third-party components
 
