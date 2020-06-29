@@ -66,14 +66,19 @@
         padding-left: 5%;
         padding-right: 5%;
 
-        @include respond-to('large') {
+        @include respond-to('medium') {
             width: percentage(1/4);
             padding-left: 2%;
             padding-right: 2%;
         }
 
         img {
-            width: 80%;
+            width: 50%;
+
+            @include respond-to('medium') {
+                width: 80%;
+            }
+
             max-width: 400px;
         }
 
@@ -91,7 +96,7 @@
         }
 
         &:last-child {
-            @include respond-to('large') {
+            @include respond-to('medium') {
                 width: percentage(2/3);
             }
 
