@@ -2,6 +2,10 @@
 
 .main-logo {
     grid-column: col-start 1 / span 12 !important;
+    
+    img {
+        max-height: 2.5rem;
+    }
 }
 
 .home-hero {
@@ -31,9 +35,16 @@
         font-family: $headline-font;
         font-weight: 700;
         text-transform: lowercase;
-        font-size: 2rem;
+        font-size: 1.9rem;
         margin-left: 0;
         text-align: center;
+        word-wrap: normal;
+        word-break: keep-all;
+        white-space: normal;
+        
+        @include respond-to('large') {
+          font-size: 2.2rem;
+        }
     }
 
     p {
@@ -48,7 +59,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 10rem;
+    margin-top: 5rem;
 
     &__item {
         width: 100%;
@@ -56,13 +67,14 @@
         padding-right: 5%;
 
         @include respond-to('large') {
-            width: percentage(1/6);
+            width: percentage(1/4);
             padding-left: 2%;
             padding-right: 2%;
         }
 
         img {
             width: 80%;
+            max-width: 400px;
         }
 
         h3 {
@@ -72,7 +84,7 @@
         }
 
         .button {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-top: 0;
             padding: 0.8rem;
             width: 80%;
@@ -94,4 +106,5 @@
 
 .footer-info {
     text-align: center;
+    font-size: 0.8rem;
 }
