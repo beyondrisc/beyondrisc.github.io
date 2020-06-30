@@ -1,5 +1,15 @@
+@import '../layout/grid';
+
+.main-logo {
+    grid-column: col-start 1 / span 12 !important;
+    
+    img {
+        max-height: 2.5rem;
+    }
+}
+
 .home-hero {
-    text-align: left;
+    text-align: center;
 
     margin-top: 5vw;
     
@@ -10,7 +20,7 @@
         margin-bottom: 1rem;
     }
 
-    .home-hero__bordered:before {
+    /*.home-hero__bordered:before {
         content: "";
         position: absolute;
         width: 0.5rem;
@@ -18,19 +28,88 @@
         top: 0;
         left: -2rem;
         background-color: $secondary-colour;
-    }
+    }*/
 
     h1 {
         color: $primary-colour;
         font-family: $headline-font;
         font-weight: 700;
         text-transform: lowercase;
+        font-size: 1.9rem;
         margin-left: 0;
+        text-align: center;
+        word-wrap: normal;
+        word-break: keep-all;
+        white-space: normal;
+        
+        @include respond-to('large') {
+          font-size: 2.2rem;
+        }
     }
 
     p {
         font-family: $text-font;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 1.2rem;
     }
+}
+
+.home-featured-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+
+    &__item {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        @include respond-to('medium') {
+            width: percentage(1/4);
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        img {
+            width: 50%;
+
+            @include respond-to('medium') {
+                width: 80%;
+            }
+
+            max-width: 400px;
+        }
+
+        h3 {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 0.9rem;
+            margin-top: 0;
+            padding: 0.8rem;
+            width: 80%;
+        }
+
+        &:last-child {
+            @include respond-to('medium') {
+                width: percentage(2/3);
+            }
+
+            align-self: center;
+        }
+    }
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 0.8rem;
 }
